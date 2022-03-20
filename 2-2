@@ -1,0 +1,36 @@
+#include <stdio.h>
+
+int main(){
+    char charType; // char 자료형의 charType이란 변수명 선언
+    int integerType; // int 자료형의 integerType이란 변수명 선언
+    float floatType; // float 자료형의 floatType이란 변수명 선언
+    double doubleType; // double 자료형의 doubleType이란 변수명 선언
+
+    printf("[---- [오준영] [2017038074] ----]\n");
+    printf("Size of char: %ld byte\n", sizeof(charType)); 
+    printf("Size of int: %ld bytes\n", sizeof(integerType)); 
+    printf("Size of float: %ld bytes\n", sizeof(floatType));
+    printf("Size of double: %ld bytes\n", sizeof(doubleType));
+
+    printf("-------------------------------------------\n");
+
+    printf("Size of char: %ld byte\n", sizeof(char));
+    printf("Size of int: %ld bytes\n", sizeof(int));
+    printf("Size of float: %ld bytes\n", sizeof(float));
+    printf("Size of double: %ld bytes\n", sizeof(double));
+
+    printf("-------------------------------------------\n");
+ 
+    printf("Size of char*: %ld byte\n", sizeof(char*));
+    printf("Size of int*: %ld bytes\n", sizeof(int*));
+    printf("Size of float*: %ld bytes\n", sizeof(float*));
+    printf("Size of double*: %ld bytes\n", sizeof(double*));
+
+    return 0;
+}
+
+/*
+결과 
+선언해준 변수는 앞에 쓰여져 있는 자료형만큼 byte를 할당 받으므로 결과값이 같다.
+하지만 마지막 char*, int*, float*, double*과 같은 포인터는 동일하게 4bytes씩 할당받는다.
+*/
